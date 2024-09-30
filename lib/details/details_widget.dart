@@ -42,6 +42,8 @@ class _DetailsWidgetState extends State<DetailsWidget> {
       'details',
     ));
     _model.textFieldFocusNode2 ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
