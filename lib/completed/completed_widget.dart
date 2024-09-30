@@ -24,6 +24,8 @@ class _CompletedWidgetState extends State<CompletedWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => CompletedModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -103,6 +103,8 @@ class _LoginWidgetState extends State<LoginWidget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -546,10 +548,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
+                                                      color: const Color(0xFF2FC1C4),
                                                       textStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
